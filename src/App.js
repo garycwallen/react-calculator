@@ -72,7 +72,7 @@ function reducer(state, { type, payload }) {
         currentOperand: state.currentOperand.slice(0, -1)
       }
     case ACTIONS.EVALUATE:
-      if (state.opeartion == null || state.currentOperand == null || state.previousOperand == null) {
+      if (state.operation == null || state.currentOperand == null || state.previousOperand == null) {
         return state
       }
 
